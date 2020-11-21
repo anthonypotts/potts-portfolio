@@ -71,14 +71,14 @@ header nav ul li a:hover {
 
 /* HERO STYLES START */
 .hero {
-    background: var(--tertiary-color);
+    background-image: url(../images/mpls-church.jpeg);
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
     align-items: flex-end;
-    background-attachment: fixed;
+    background-attachment: static;
     background-position: 80%;
     height: 250px;
     border-bottom: 2px solid var(--primary-color);
@@ -94,7 +94,7 @@ header nav ul li a:hover {
 }
 /* HERO STYLES END */
 
-/* ABOUT ME STYLES BEBIN */
+/* ABOUT ME STYLES BEGIN */
 .section-container {
     display: flex;
 }
@@ -116,4 +116,60 @@ header nav ul li a:hover {
 .section-container p {
     margin: 20px;
     font-size: 25px
+}
+/* ABOUT ME STYLES END */
+
+/* MY WORK SECTION BEGINS */
+.projects-grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.projects-grid-container {
+    background: rgb(185, 185, 89);
+    width: 60%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 4fr 2fr 2fr;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+.projects-grid-item {
+    padding: 25px 15px;
+    width: 2fr;
+    height: 3fr;
+    border: 2px solid var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.box-1 {
+    background-image: url(../images/run-buddy.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.projects-grid-item:hover .projects-grid-item::after {
+    opacity: 1;
+}
+
+.projects-grid-item::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(252, 225, 56, 0.3), var(--secondary-color));
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.projects-grid-label {
+    background: var(--tertiary-color);
+    align-items: flex-end;
 }
