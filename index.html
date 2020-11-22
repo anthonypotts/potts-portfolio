@@ -3,14 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>anthonypotts</title>
 </head>
 <body>
     <!--navigation-->
-    <
-    
+    <nav>
+        <div class="nav-wrapper amber darken-3">
+            <a href="https://soundcloud.com/jnorthport" class="brand-logo center"><i class="material-icons grey-text text-darken-4">music_note</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#about-me" class="grey-text text-darken-4">about me.</a></li>
+                <li><a href="#my-work" class="grey-text text-darken-4">my work.</a></li>
+                <li><a href="#contact" class="grey-text text-darken-4">contact.</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container about-me">
+        <div class="row valign-wrapper" id="about-me">
+            <div class="col l4 s2">
+                <img src="./assets/images/tony-potts3.jpg" alt="Anthony Potts" class="circle responsive-img"> <!-- notice the "circle" class -->
+            </div>
+            <div class="col l8 s10 bio-text">
+                <!-- <div class="card-panel white"> -->
+                    <span>
+                        Hello!<br>
+                        My name is Anthony Potts<br>
+                        I am a web developer<br>
+                        Below you will find examples of my work<br>
+                        Please allow me to answer any questions you may have<br>
+                    </span>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-work" id="my-work">
+        <div class="row">
+            <div class="col l6 s6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./assets/images/run-buddy.png">
+                        <span class="card-title ">Run Buddy</span>
+                        <a class="btn-floating halfway-fab waves-effect waves-light amber darken-3"><i class="material-icons">add</i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col l3 s6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./assets/images/pm.png">
+                        <span class="card-title">Card Title</span>
+                        <a class="btn-floating halfway-fab waves-effect waves-light amber darken-3"><i class="material-icons">add</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
