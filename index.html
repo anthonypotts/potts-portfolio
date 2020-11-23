@@ -1,138 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./assets/css/style.css" />
-        <title>anthony-potts-portfolio</title>
-    </head>
-    <body>
-        <!-- NAVIGATION -->
-        <header>
-            <h1>anthonypotts</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about">about me.</a>
-                    </li>
-                    <li>
-                        <a href="#work">my work.</a>
-                    </li>
-                    <li>
-                        <a href="#contact">contact.</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>anthonypotts</title>
+</head>
+<body>
+    <!--navigation-->
+    <nav>
+        <div class="nav-wrapper amber darken-3">
+            <a href="https://soundcloud.com/jnorthport" class="brand-logo center"><i class="material-icons grey-text text-darken-4">music_note</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#about-me" class="grey-text text-darken-4">about me.</a></li>
+                <li><a href="#my-work" class="grey-text text-darken-4">my work.</a></li>
+                <li><a href="#contact" class="grey-text text-darken-4">contact.</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <!-- HERO SECTION BEGINS -->
-        <section class="hero">
-            <h2>"What's he building in there?" (Tom Waits)</h2>
-        </section>
-        <!-- HERO SECTION ENDS -->
-
-        <!-- ABOUT-ME SECTION BEGINS -->
-        <section id="about" class="section-container">
-            <h2 class="section-title">ABOUT ME.</h2>
-            <div class="bio-img">
-                <img src="./assets/images/anthony-bun.jpeg" alt="Anthony Potts" style="width:250px; height:250px" />
+    <div class="container about-me">
+        <div class="row valign-wrapper" id="about-me">
+            <div class="col l4 s2">
+                <img src="./assets/images/tony-potts3.jpg" alt="Anthony Potts" class="circle responsive-img"> <!-- notice the "circle" class -->
             </div>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ipsam ipsa quasi molestias recusandae ullam fugit tempora omnis maiores. Commodi nihil non asperiores autem amet nesciunt libero. Fugiat, incidunt recusandae.
-            </p>
+            <div class="col l8 s10 bio-text">
+                <!-- <div class="card-panel white"> -->
+                    <span>
+                        Hello!<br>
+                        My name is Anthony Potts<br>
+                        I am a web developer<br>
+                        Below you will find examples of my work<br>
+                        Please allow me to answer any questions you may have<br>
+                    </span>
+                <!-- </div> -->
             </div>
-        </section>
-        <!-- ABOUT ME SECTION ENDS-->
+        </div>
+    </div>
 
-        <!-- MY WORK SECTION BEGINS -->
-        <section id="work" class="section-container">
-            <h2 class="section-title">MY WORK.</h2>
-            
-            <!-- Projects grid -->
-            <div class="projects-grid-wrapper">
-                <div class="projects-grid-container">
-
-                    <div class="projects-grid-item">
-                        <a href="https://anthonypotts.github.io/run-buddy/"></a>
-                        <div class="projects-grid-label">
-                            <h3 class="project-title">
-                                Run Buddy
-                            </h3>
-                            <h4 class="project-subtitle">
-                                HTML/CSS
-                            </h4>
-                        </div>
+    <div class="container my-work" id="my-work">
+        <div class="row">
+            <div class="col l6 s12">
+                <div class="card">
+                    <div class="card-image z-depth-2">
+                        <img class="materialboxed" width="650" src="./assets/images/run-buddy.png">
+                        <!-- <span class="card-title amber-text text-darken-3">Form</span> -->
+                        <a class="btn-floating halfway-fab waves-effect waves-light amber darken-3"><i class="material-icons">fingerprint</i></a>
                     </div>
-
-                    <div class="projects-grid-item">
-                        <div class="projects-grid-label">
-                            <h3 class="projects-title">
-                                Example
-                            </h3>
-                            <h4 class="projects-subtitle">
-                                Not live
-                            </h4>
-                        </div>
-                    </div>
-
-                    <div class="projects-grid-item">
-                        <div class="projects-grid-label">
-                            <h3 class="projects-title">
-                                Example
-                            </h3>
-                            <h4 class="projects-subtitle">
-                                Not live
-                            </h4>
-                        </div>
-                    </div>
-
-                    <div class="projects-grid-item">
-                        <div class="projects-grid-label">
-                            <h3 class="projects-title">
-                                Example
-                            </h3>
-                            <h4 class="projects-subtitle">
-                                Not live
-                            </h4>
-                        </div>
-                    </div>
-
-                    <div class="projects-grid-item">
-                        <div class="projects-grid-label">
-                            <h3 class="projects-title">
-                                Example
-                            </h3>
-                            <h4 class="projects-subtitle">
-                                Not live
-                            </h4>
-                        </div>
-                    </div>
-
-                    <div class="projects-grid-item">
-                        <div class="projects-grid-label">
-                            <h3 class="projects-title">
-                                Example
-                            </h3>
-                            <h4 class="projects-subtitle">
-                                Not live
-                            </h4>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-        </section>
 
-        <section id="contact" class="section-container">
-            <h2 class="section-title">CONTACT.</h2>
-            <div class="contact-info">
-                <p>
-                    (701)361-7608 <br />
-                    ampotts24@gmail.com <br />
-                    <a href="https://github.com/anthonypotts">GitHub</a><br />
-                    <a href="https://www.linkedin.com/in/anthony-potts-8016b4176/">LinkedIn</a>
-                </p>
+            <div class="col l3 s6">
+                <div class="card">
+                    <div class="card-image z-depth-2">
+                        <img class="materialboxed" width="650" src="./assets/images/pm.png">
+                        <!-- <span class="card-title amber-text text-darken-3">Contact Us Page</span> -->
+                        <a class="btn-floating halfway-fab waves-effect waves-light amber darken-3"><i class="material-icons">fingerprint</i></a>
+                    </div>
+                </div>
             </div>
-        </section>
-    </body>
+
+            <div class="col l3 s6">
+                <div class="card">
+                    <div class="card-image z-depth-2">
+                        <img class="materialboxed" width="650" src="./assets/images/git-it-done.png">
+                        <!-- <span class="card-title amber-text text-darken-3">Web App</span> -->
+                        <a class="btn-floating halfway-fab waves-effect waves-light amber darken-3"><i class="material-icons">fingerprint</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container contact" id="contact">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5>Contact:</h5>
+                <p>ampotts24@gmail.com</p>
+                <p><a href="https://www.linkedin.com/in/anthony-potts-8016b4176/" class="grey-text text-darken-4">Linked In</a></p>
+                <p><a href="https://github.com/anthonypotts" class="grey-text text-darken-4">Github</a></p>
+            </div>
+            <form class="col l6 s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">Full Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">email</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">Email</label>
+                    </div>
+                </div>
+            </form>
+          </div>
+    </div>
+
+    <footer class="page-footer amber darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="grey-text text-darken-4">Thanks for visiting!</h5>
+                    <p class="grey-text text-darken-3">Most of my work is freelance. I work alongside you to create a webpage that fits your design needs. I'd love to chat about projects you're considering. Don't hesitate to reach out!</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="grey-text text-darken-4">anthonypotts</h5>
+                    <ul>
+                        <li><a class="grey-text text-darken-4" href="#about-me">about me.</a></li>
+                        <li><a class="grey-text text-darken-4" href="#my-work">my work.</a></li>
+                        <li><a class="grey-text text-darken-4" href="#contact">contact.</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container grey-text text-darken-4">
+                © 2020 Copyright anthonypotts
+            </div>
+        </div>
+      </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./assets/js/homepage.js"></script>
+
+</body>
 </html>
