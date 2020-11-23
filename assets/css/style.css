@@ -5,6 +5,10 @@
     --quarternary-color: #FFE35B;
 } */
 
+body {
+    background-color: #eeeeee;
+}
+
 .nav-wrapper {
     padding-left: 20px;
 }
