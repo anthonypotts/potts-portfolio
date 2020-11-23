@@ -1,26 +1,26 @@
-/* :root {
-    --primary-color: #923036;
-    --secondary-color: #048776;
-    --tertiary-color: #EDE5CA;
-    --quarternary-color: #FFE35B;
-} */
+:root {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: large;
+}
 
 body {
-    background-color: #eeeeee;
+    background-image: url("../images/sky-at-sunrise.jpg");
+    background-size: cover;
+    background-position: center;
+    background-position: 80%;
 }
 
 .nav-wrapper {
     padding-left: 20px;
+    /* background-color: #E25F4E; */
 }
-
-/* .hero {
-    color: var(--primary-color);
-    text-align: center;
-} */
 
 .about-me {
     padding: 20px 0;
     border-bottom: 2px solid #ff8f00;
+    font-family: 'Xanh Mono', monospace;
+    font-size: large;
+    font-weight: lighter;
 }
 
 .my-work {
